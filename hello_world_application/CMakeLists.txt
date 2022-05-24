@@ -3,8 +3,6 @@ project(HelloWorld)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(hello STATIC /home/lobov/1-lobov-1/workspace/projects/lab04/formatter_ex_lib/formatter_ex.cpp /home/lobov/1-lobov-1/workspace/projects/lab04/formatter_lib/formatter.cpp)
-
-
 include_directories(/home/lobov/1-lobov-1/workspace/projects/lab04/formatter_ex_lib /home/lobov/1-lobov-1/workspace/projects/lab04/formatter_lib)
 add_executable(Hello ${CMAKE_CURRENT_SOURCE_DIR}/hello_world.cpp)
 target_link_libraries(Hello hello)
